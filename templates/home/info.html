@@ -1,0 +1,51 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block css %}
+     <style>
+        .navlist2{
+            color: green;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <div class="onpure-box" style="height:150px;width: 200px;margin: 0 auto;text-align: center;background: white;position: relative">
+            <p class="onpure" style="position: absolute;
+                                       top: 55px;
+                                       left: 50%;
+                                       width: 400px;
+                                       margin-left: -200px;
+                                       margin-top: 0;
+                                       z-index: 1;
+                                       font-size: 21px">
+                <span class="onpure-title" style="background: white;padding:0 10px">公司简介</span>
+            </p>
+                <span class="line" style="display: inline-block;
+				width: 320px;
+				border: 1px solid gainsboro;
+				position: absolute;
+				top: 70px;
+				left: 50%;
+                margin-left: -160px;
+		        "></span>
+        </div>
+        <div class="onpure-box" style="height:480px;width: 100%;margin: 0 auto;text-align: center;position: relative">
+            <div class="" style="height: 480px;width: 48%;float: left;position: relative;text-align: right">
+                <img src="/static/base/images/cate.png" width="420px" height="290px">
+            </div>
+            <div class="" style="top: -15px;height: 330px;width: 48%;float: right;position: relative;text-align: left">
+                <p class="" style="font-size: 17px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海乐店商贸有限公司成立于20</p>
+                <p class="" style="font-size: 17px">16年12月30日,&nbsp;品牌&nbsp;&nbsp;"24鲜fresh&nbsp;+</p>
+                <p class="" style="font-size: 17px">"&nbsp;是沪上第一家即食加强型便利餐厅</p>
+                <p class="" style="font-size: 17px">店.&nbsp;公司与本地生活服务平台口碑合</p>
+                <p class="" style="font-size: 17px">作,&nbsp;国内首次有人便利店上线无人收</p>
+                <p class="" style="font-size: 17px">银技术.&nbsp;主要以充满活力与朝气的热</p>
+                <p class="" style="font-size: 17px">血年轻人以及应届大学生和具有便利</p>
+                <p class="" style="font-size: 17px">店管理经验的干部组成总部</p>
+                <p class="" style="font-size: 17px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司总部运营及商品团队拥有十</p>
+                <p class="" style="font-size: 17px">年及以上的工作经验</p>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'base/css/hiring.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <div class="onpure-box"
+             style="height:150px;width: 200px;margin: 0 auto;text-align: center;background: white;position: relative">
+            <p class="onpure" style="position: absolute;
+                                       top: 55px;
+                                       left: 50%;
+                                       width: 400px;
+                                       margin-left: -200px;
+                                       margin-top: 0;
+                                       z-index: 1;
+                                       font-size: 21px">
+                <span class="onpure-title" style="background: white;padding:0 10px">人才招聘</span>
+            </p>
+                <span class="line" style="display: inline-block;
+				width: 320px;
+				border: 1px solid gainsboro;
+				position: absolute;
+				top: 70px;
+				left: 50%;
+                margin-left: -160px;
+		        "></span>
+        </div>
+    </div>
+    <div class="onpure-box"
+         style="display: block;;height:100px;width: 800px;margin: 0 auto;text-align: center;position: relative;">
+        <ul type="none" class="ul2" style="text-align: center;width: 760px;
+                                                height: 40px;
+                                                display: block;
+                                                float: left;
+                                                ">
+            <li>
+                <div><a class="MiddleList1" tabindex="1" href="/index/goods/">商品部</a></div>
+            </li>
+            <li>
+                <div><a class="MiddleList2" tabindex="2" href="/index/manage/">营运部</a></div>
+            </li>
+            <li>
+                <div><a class="MiddleList3" tabindex="3" href="/index/service/">管理部</a></div>
+            </li>
+        </ul>
+
+    </div>
+    {% block div %}{% endblock %}
+    <div class="onpure-box" style="height:150px;width: 250px;margin: 0 auto;text-align: center;position: relative">
+        <p class="onpure-title" style="padding:0 10px;font-size: 18px">简历请投至</p>
+        <p class="onpure-title" style="padding:0 10px;font-size: 18px;background: #0099FF;">18317968742@163.com</p>
+    </div>
+{% endblock %}

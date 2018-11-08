@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--设置标题小图标-->
+    <link rel="icon" href="/static/base/images/log.ico" type="image/x-icon"/>
+    <title>{% block title %}24鲜 fresh+ - 首页{% endblock %}</title>
+    <!--导入css-->
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+<div class="box">
+    <!--创建锚点-->
+    <a name="maodian"></a>
+    <!--导航-->
+    <nav class="">
+        <div class="div-nav">
+            <ul type="none" class="ul1" id="menu">
+                <li><img src="/static/base/images/log1.ico"></li>
+                <li><a class="navlist1" href="/">首页</a></li>
+                <li><a class="navlist2" href="/index/info/">公司简介</a></li>
+                <li><a class="navlist3" href="/index/show/">店铺展示</a></li>
+                <li><a class="navlist4" href="/index/goods/">人才招聘</a></li>
+                <li><a class="navlist5" href="/index/contact/">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr/>
+    <div class="header">
+        <img src="/static/base/images/theme.png" width="100%" height="400px">
+    </div>
+    {% block content %}
+    {% endblock %}
+    <!--页脚-->
+    <div style="width: 80px;height: 40px;position: fixed;right: 20px;bottom: 6%;font-size: 15px; ">
+        <a style="display: block" class="maodian" href="#maodian">顶部</a>
+    </div>
+    <footer>
+        <div class="text-center">
+            <ul type="none" class="footer-cell">
+                <li><p class="text-title">公司介绍</p></li>
+                <li><p><a href="/index/base/">企业文化</a></p></li>
+                <li><p><a href="/index/show/">店铺展示</a></p></li>
+                <li><p><a href="/index/hiring/">人才招聘</a></p></li>
+            </ul>
+            <ul type="none" class="footer-cell" style="float: right;">
+                <li><p class="text-title">联系我们</p></li>
+                <li><p>上海市虹口区福龙大厦273号801</p></li>
+                <li><p>邮编: 10010</p></li>
+                <li><p>客服: 10010</p></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div class="copyRight">上海乐店商贸有限公司版权所有 &nbsp; &nbsp; &nbsp;沪ICP备：1000000号
+    </div>
+
+
+</div>
+<!--引入js-->
+<script src="{% static 'base/js/jquery.min.js' %}"></script>
+<script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+{% block js %}
+{% endblock %}
+
+</body>
+</html>

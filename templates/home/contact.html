@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    <style>
+        .navlist5{
+            color: green;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <div class="onpure-box" style="height:150px;width: 200px;margin: 0 auto;text-align: center;background: white;position: relative">
+            <p class="onpure" style="position: absolute;
+                                       top: 55px;
+                                       left: 50%;
+                                       width: 400px;
+                                       margin-left: -200px;
+                                       margin-top: 0;
+                                       z-index: 1;
+                                       font-size: 24px">
+                <span class="onpure-title" style="background: white;padding:0 10px">店铺展示</span>
+            </p>
+                <span class="line" style="display: inline-block;
+				width: 400px;
+				border: 1px solid gainsboro;
+				position: absolute;
+				top: 70px;
+				left: 50%;
+                margin-left: -200px;
+		        "></span>
+        </div>
+        <div class="onpure-box" style="height:600px;width: 100%;margin: 0 auto;text-align: center;position: relative">
+            <div class="" style="height: 600px;width: 48%;float: left;position: relative;text-align: right">
+                <img src="/static/base/images/ditu.png" width="360px" height="360px">
+            </div>
+            <div class="" style="top: 50px;height: 310px;width: 48%;float: right;position: relative;text-align: left">
+                <p class="" style="font-size: 24px">上海乐店商贸有限公司</p>
+                <p class="" style="font-size: 18px">上海市虹口区福龙大厦273号801室</p>
+                <p class="" style="font-size: 18px">联系人: &nbsp;邱伟祥</p>
+                <p class="" style="font-size: 18px">电话:&nbsp;123456789</p>
+                <p class="" style="font-size: 18px">邮箱:&nbsp;123@123</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/flexible-bootstrap-carousel.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/styles.css' %}" />
+    <style>
+        .navlist3 {
+            color: green;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <div class="onpure-box" style="height:160px;width: 200px;margin: 0 auto;text-align: center;background: white;position: relative">
+            <p class="onpure" style="position: absolute;
+                                       top: 55px;
+                                       left: 50%;
+                                       width: 400px;
+                                       margin-left: -200px;
+                                       margin-top: 0;
+                                       z-index: 1;
+                                       font-size: 24px">
+                <span class="onpure-title" style="background: white;padding:0 10px">店铺展示</span>
+            </p>
+                <span class="line" style="display: inline-block;
+				width: 400px;
+				border: 1px solid gainsboro;
+				position: absolute;
+				top: 70px;
+				left: 50%;
+                margin-left: -200px;
+		        "></span>
+        </div>
+        <div id="img-box" style="height: 360px;width: auto;text-align: center;position: relative; ">
+            <section class="examples">
+                <div class="container">
+                    <div class="carousel-example">
+                        <!-- FLEXIBLE BOOTSTRAP CAROUSEL -->
+                        <div id="simple-content-carousel" class="carousel flexible slide" data-ride="carousel"
+                             data-interval="5000" data-wrap="true">
+                            <div class="items">
+                                <div class="flex-item">
+                                    <img class="img-responsive" src="{% static 'base/images/item1.jpg' %}"/>
+                                </div>
+                                <div class="flex-item">
+                                    <img class="img-responsive" src="{% static 'base/images/item1.jpg' %}"/>
+                                </div>
+                                <div class="flex-item">
+                                    <img class="img-responsive" src="{% static 'base/images/item1.jpg' %}"/>
+                                </div>
+                                <div class="flex-item">
+                                    <img class="img-responsive" src="{% static 'base/images/item1.jpg' %}"/>
+                                </div>
+                                <div class="flex-item">
+                                    <img class="img-responsive" src="{% static 'base/images/item1.jpg' %}"/>
+                                </div>
+                                <div class="flex-item">
+                                    <img class="img-responsive" src="{% static 'base/images/item1.jpg' %}"/>
+                                </div>
+                            </div>
+                            <div class="carousel-inner" role="listbox">
+                            </div>
+                            <a class="left carousel-control" href="#simple-content-carousel" role="button"
+                               data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                            </a>
+                            <a class="right carousel-control" href="#simple-content-carousel" role="button"
+                               data-slide="next">
+                                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="onpure-box"
+             style="height:150px;width: 786px;margin: 0 auto;text-align: center;background: white;position: relative">
+            <span class="onpure-title" style="padding:0 10px;line-height: 30px;font-size: 21px">便利店+厨房,&nbsp;满足中国消费者的需求,&nbsp;一热抵三鲜</span>
+        </div>
+
+    </div>
+{% endblock %}
+{% block js %}
+    <script src="{% static 'base/js/bootstrap-select.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/flexible-bootstrap-carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/script.js' %}"></script>
+{% endblock %}
